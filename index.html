@@ -62,22 +62,17 @@
     }
   </style>
 </head>
-<body>
+<!-- ✅ Click anywhere on the page to start music -->
+<body onclick="document.getElementById('bg-music').play()">
   <!-- Right side section -->
   <div class="right-section">
-    <!-- JPEG Photo -->
     <img src="myphoto.jpeg" alt="Main Photo" class="main-photo">
-
-    <!-- Greeting -->
-    <h1>🎉 Happy birthday my uyiree 🎶</h1>
-
-    <!-- Tamil Line -->
+    <h1>🎉 Happy birthday uyiree 🎶</h1>
     <div class="tamil-text">பூவினம் சேராத பூவொன்று பூமியில் பூத்த நாள் இன்று
 வானம் சேராத நிலவொன்று மண்ணில் உதித்த நாள் இன்று.</div>
   </div>
 
-
-   <!-- Background Song -->
+  <!-- Background Song -->
   <audio id="bg-music" loop>
     <source src="song.mpeg" type="audio/mpeg">
   </audio>
