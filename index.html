@@ -76,21 +76,12 @@
 வானம் சேராத நிலவொன்று மண்ணில் உதித்த நாள் இன்று.</div>
   </div>
 
-  <!-- Auto-playing Song -->
-  <audio autoplay loop>
+
+   <!-- Background Song -->
+  <audio id="bg-music" loop>
     <source src="song.mpeg" type="audio/mpeg">
-    Your browser does not support the audio element.
   </audio>
-    <!-- ✅ Autoplay Fix Script -->
-  <script>
-    window.addEventListener("load", () => {
-      const audio = document.getElementById("bg-music");
-      audio.muted = false; // unmute after load
-      audio.play().catch(err => {
-        console.log("Autoplay blocked, user must click:", err);
-      });
-    });
-  </script>
 </body>
 </html>
+
 
